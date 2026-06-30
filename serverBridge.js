@@ -11,7 +11,7 @@ const net = require('net');
 const { WebSocketServer } = require('ws');
 
 const WS_PORT = 8100;          // Ruffle opens this port
-const TCP_HOST = '93.88.201.26';
+const TCP_HOST = '127.0.0.1';
 const TCP_PORT = 9500;          // Game server TCP port
 
 const wss = new WebSocketServer({ port: WS_PORT });
