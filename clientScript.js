@@ -1,8 +1,9 @@
 <script>
-		window.RufflePlayer = window.RufflePlayer || {};
-    const proxyIpAdress = "127.0.0.1"
-    const proxyPort = 8100
-		
+		const gameIp = "127.0.0.1"
+		const gamePort = 9500
+    	const proxyIpAdress = "127.0.0.1"
+    	const proxyPort = 8100
+
 		window.RufflePlayer = window.RufflePlayer || {};
 
 		function startRuffle() {
@@ -32,6 +33,8 @@
 				parameters: { editby: "" },
 				socketProxy: [
 					{
+						host: gameIp,
+						port: gamePort,
 						proxyUrl: "ws://${proxyIpAdress}:${proxyPort}"
 					}
 				]
